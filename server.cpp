@@ -1,4 +1,4 @@
-h>
+#include <iostream.h>
 #include <string.h>
 #include <string>
  
@@ -28,7 +28,7 @@ int main()
     // Wait for a connection
     sockaddr_in client;
     socklen_t clientSize = sizeof(client);
- 
+    
     int clientSocket = accept(listening, (sockaddr*)&client, &clientSize);
  
     char host[NI_MAXHOST];      // Client's remote name
